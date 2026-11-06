@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Launcher so you can run ./bin/lk from anywhere without installing anything.
+set -euo pipefail
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PYTHONPATH="$HERE${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m lk "$@"

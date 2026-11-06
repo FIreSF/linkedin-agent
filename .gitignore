@@ -1,0 +1,13 @@
+drafts/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/auth.json
+data/usage.json
+data/
+*.log
+.DS_Store
